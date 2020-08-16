@@ -25,4 +25,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 App deployed to Firebase. 
 Url: https://weather-app-4e678.web.app
-
+Video: App video attached in the root directory (https://github.com/neelamv222/weather-app/blob/master/weather-app.mov).
+Mobile View Screenshot: https://github.com/neelamv222/weather-app/blob/master/weather-app-mobile.jpg
