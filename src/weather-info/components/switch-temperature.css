@@ -1,0 +1,7 @@
+.st__container {
+    width: 100%;
+}
+.st__container .st__radio-group {
+    flex-direction: row;
+    justify-content: space-around;
+}
