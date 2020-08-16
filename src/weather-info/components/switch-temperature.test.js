@@ -1,7 +1,7 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import SwitchTemperature from './switch-tempature';
+import SwitchTemperature from './switch-temperature';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -27,7 +27,6 @@ describe('DayCards:', () => {
 
   it('should render two radio buttons', () => {
     const radioBtn = enzymeWrapper.find(FormControlLabel);
-    console.log(radioBtn.at(1))
     expect(radioBtn).toHaveLength(2);
   });
 

@@ -48,7 +48,13 @@ const DayCards = ({ items, tempUnit }) => {
           ))
         }
       </Grid>
-      {selectedReadings && selectedReadings.length > 0 && <BarChart readings={selectedReadings} />}
+      {
+        selectedReadings && selectedReadings.length > 0 && (
+        <BarChart
+          readings={selectedReadings}
+          tempUnit={tempUnit} />
+        )
+      }
     </>
   );
 }

@@ -6,7 +6,7 @@ import { get } from 'lodash';
 import Container from '@material-ui/core/Container';
 
 import DayCards from "./components/day-cards";
-import SwitchTemperature from "./components/switch-tempature";
+import SwitchTemperature from "./components/switch-temperature";
 import withLoader from '../common/common-components/loader';
 import Header from './components/header';
 import ErrorMessageBox from '../common/common-components/error-message-box';

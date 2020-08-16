@@ -1,6 +1,6 @@
 
 import React from "react";
-import { array } from "prop-types";
+import { array, string } from "prop-types";
 import Grid from '@material-ui/core/Grid';
 import Chart from "react-apexcharts";
 
@@ -8,8 +8,8 @@ import { barChartConfigurations } from "../helpers/chart-configurations";
 
 import "./bar-chart.css";
 
-const BarChart = ({ readings }) => {
-  const { options, series } = barChartConfigurations(readings);
+const BarChart = ({ readings, tempUnit }) => {
+  const { options, series } = barChartConfigurations(readings, tempUnit);
   return (
     <Grid className="bc__container">
       <Grid item xs={12} md={12} lg={6} sm={12}>
@@ -25,7 +25,8 @@ const BarChart = ({ readings }) => {
 }
 
 BarChart.propTypes = {
-  readings: array.isRequired
+  readings: array.isRequired,
+  tempUnit: string
 };
 
 export default BarChart;

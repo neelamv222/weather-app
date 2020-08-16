@@ -17,7 +17,7 @@ const DayCard = ({ item, onCardSelect, tempUnit, selectedDate }) => {
             Temp:
           </Typography>
           <Typography variant="body2" component="p">
-            {`${item.avgTemp}${tempUnit}`}
+            {`${item.avgTemp} ${tempUnit}`}
           </Typography>
           <Typography className="card__title" color="textSecondary">
             Date:

@@ -2,6 +2,7 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import moment from 'moment';
 import Typography from '@material-ui/core/Typography';
 
 import DayCard from './day-card';
@@ -36,7 +37,7 @@ function setup() {
 describe('Collection', () => {
   it('should render self and subcomponents', () => {
     const { enzymeWrapper, props } = setup();
-    expect(enzymeWrapper.find(Typography).at(1).text()).toBe(`${props.item.avgTemp}F`);
-    expect(enzymeWrapper.find(Typography).at(3).text()).toBe(props.item.date);
+    expect(enzymeWrapper.find(Typography).at(1).text()).toBe(`${props.item.avgTemp} F`);
+    expect(enzymeWrapper.find(Typography).at(3).text()).toBe(moment(props.item.date).format('DD MMM YY'));
   });
 });
