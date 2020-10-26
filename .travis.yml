@@ -9,7 +9,7 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-central-1"
   app: "weather-react-docker-app"
-  env: "WeatherReactDockerApp-env"
+  env: "WeatherReactDockerApp-env-1"
   bucket_name: "elasticbeanstalk-eu-central-1-052894633894"
   bucket_path: "weather-react-docker-app"
   on: 
