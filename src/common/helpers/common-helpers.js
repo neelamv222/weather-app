@@ -34,6 +34,7 @@ export const parseResponse = (response = {}) => {
   }
 };
 
+// helper method to convert F to C
 export const convertToCelcius = (farenheitVal) => {
   const val = Math.round(((farenheitVal - 32) * 5) / 9);
   return val;
